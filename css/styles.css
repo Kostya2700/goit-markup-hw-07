@@ -57,7 +57,7 @@ img {
   margin: -1px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -72,15 +72,12 @@ img {
   padding: 94px 0;
 }
 /*Хедер*/
-/* .header {
-  border-bottom: 1px solid var(--border-header);
-} */
 .logo {
   font-family: var(--logo-font);
   font-size: 26px;
 }
 
-.webstudio {
+.header-link {
   color: var(--logo-cl);
   margin-right: 93px;
   padding-top: 24px;
@@ -89,15 +86,15 @@ img {
 .studio {
   color: var(--black-cl);
 }
-
-.list-navigation {
+/* Навігація сайту*/
+.navigation__list {
   display: flex;
   align-items: center;
 }
-.item-navigation {
+.navigation__item {
   margin-right: 50px;
 }
-.link-navigation {
+.navigation__link {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -123,8 +120,8 @@ img {
   background: var(--logo-cl);
   border-radius: 2px;
 }
-.link-navigation::after:hover,
-.link-navigation::after:focus {
+.navigation__link::after:hover,
+.navigation__link::after:focus {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -136,8 +133,8 @@ img {
   border-radius: 2px;
 }
 
-.link-navigation:hover,
-.link-navigation:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: var(--logo-cl);
 }
 .contacts {
@@ -145,20 +142,19 @@ img {
   margin-left: auto;
   align-items: center;
 }
-.icon-contact {
+.contacts__icon {
   fill: var(--grey-cl);
   margin-right: 10px;
 }
-.contacts-mail {
+.contacts__item {
   margin-right: 50px;
 }
-.link-flex {
+
+
+.contacts__link {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.link-mail {
   font-family: var(--roboto-font);
   font-style: normal;
   font-weight: 500;
@@ -171,45 +167,21 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-mail:hover,
-.link-mail:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--logo-cl);
 }
-.link-mail:hover .icon-contact,
-.link-mail:focus .icon-contact {
-  fill: var(--logo-cl);
-}
-
-.link-tel {
-  font-family: var(--roboto-font);
-  font-style: 1.14;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--grey-cl);
-  padding: 32px 0;
-  /* transition: color var(--time-hover); */
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.link-tel:hover,
-.link-tel:focus {
-  color: var(--logo-cl);
-}
-.link-tel:hover .icon-contact,
-.link-tel:focus .icon-contact {
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
   fill: var(--logo-cl);
 }
 
 /* Герой*/
-.home {
+.hero {
   background: var(--bc-footcl);
   padding: 200px 0;
-  /* height: 600px; */
 }
-.home-title {
+.hero__title {
   max-width: 650px;
   text-align: center;
   font-size: 44px;
@@ -220,9 +192,8 @@ img {
   margin-left: auto;
   margin-bottom: 30px;
   margin-right: auto;
-  /* padding-top: 200px; */
 }
-.bc-home {
+.bc-hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bc/bc-home.svg);
   max-width: 1600px;
@@ -233,7 +204,7 @@ img {
   background-position: center;
   background-size: cover;
 }
-.btn-home {
+.btn-hero {
   display: block;
   font-family: inherit;
   border-radius: 4px;
@@ -253,7 +224,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-home:hover {
+.btn-hero:hover {
   color: var(--whiteF-cl);
   background: var(--btn-cl);
 }
@@ -956,7 +927,7 @@ margin-bottom: 0;
 }
 
 /* Декорація */
-.list-navigation,
+.navigation__list,
 .contacts,
 .list-specifics,
 .list-work,
