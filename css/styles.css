@@ -748,10 +748,20 @@ img {
   margin-left: 93px;
   padding-top: 12px;
 }
+.subscription__title {
+  font-style: var(--roboto-font);
+  font-weight: 700;
+  line-height: 1.14;
+  font-size: 14px;
+  color: var(--white-cl);
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+}
+
 .subscription__list {
   display: flex;
 }
-.foot-btn {
+.subscription__btn {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -772,7 +782,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-mailing {
+.subscription__input {
   width: 358px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -782,7 +792,7 @@ img {
   color: #ffffff;
   outline: transparent;
 }
-.icon-btnf {
+.subscription__btn-icon {
   fill: var(--white-cl);
   margin-left: 10px;
 }
