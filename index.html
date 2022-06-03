@@ -21,7 +21,7 @@
     <title>Веб студия</title>
   </head>
   <body>
-    <!--Шапка-->
+      <!--Шапка-->
     <header class="header">
       <div class="container header__container">
         <a class="header__link-logo" href="./index.html" lang="en">
@@ -30,7 +30,7 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link active-page" href="./index.html">Студия</a>
+              <a class="navigation__link navigation__link--active-page" href="./index.html">Студия</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="./portfolio.html">Портфолио</a>
@@ -63,10 +63,10 @@
     </header>
     <main class="main-hero">
       <!--Герой-->
-      <section class="hero bc-hero">
+      <section class="hero hero--bc-image">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
+          <button class="btn hero__btn" type="button" data-modal-open>Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal-windov">
               <button class="modal-closed" data-modal-close>
@@ -118,13 +118,13 @@
                   <a class="modal-form__link-modul" href="">Условия договора</a>
                  </span>
                 </label>
-                  <button class="modal-form__btn-modul" type="submit">Отправить</button>
+                  <button class="btn modal-form__btn-modul" type="submit">Отправить</button>
               </form>
             </div>
           </div>
         </div>
       </section>
-      <!--Особенности-->
+      <!--Особливості-->
       <section class="specifics modul">
         <div class="container">
           <!--Заховати заголовок h2 в сss-->
@@ -177,7 +177,7 @@
           </ul>
         </div>
       </section>
-              <!--Чим ми займаємось-->
+      <!--Чим ми займаємось-->
       <section class="work modul">
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
@@ -472,7 +472,7 @@
           </ul>
         </div>
       </section>
-      <!--Постоянний клиенти-->
+      <!--Постійні клієнти-->
       <section class="clients modul">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
@@ -511,7 +511,7 @@
         </div>
       </section>
     </main>
-    <!--Подвал-->
+    <!--Підвал-->
     <footer class="footer">
       <div class="container container--flex">
         <div class="footer__container">
@@ -571,8 +571,8 @@
             <label class="subscription__label">
             <input class="subscription__input" type="email" placeholder="E-mail">
           </label>
-            <button class="subscription__btn" type="submit">Подписаться
-              <svg class="icon-btnf" width="24" height="24">
+            <button class="btn subscription__btn" type="submit">Подписаться
+              <svg class="subscription__btn-icon" width="24" height="24">
                 <use href="./images/icon/sprite.svg#icon-foot"></use>
               </svg>
             </button>
