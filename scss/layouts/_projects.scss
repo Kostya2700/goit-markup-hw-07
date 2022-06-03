@@ -19,12 +19,13 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    box-shadow: 0 4px 4px var(--border-team);
+  }
 }
-.project__item:hover,
-.project__item:focus {
-  cursor: pointer;
-  box-shadow: 0 4px 4px var(--border-team);
-}
+
 .project__card-thumb {
   position: relative;
   overflow: hidden;
@@ -52,8 +53,9 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--whiteF-cl);
-}
-.project__item:hover .project__overlay,
-.project__item:focus .project__overlay {
-  transform: translateY(0);
+
+  .project__item:hover &,
+  .project__item:focus & {
+    transform: translateY(0);
+  }
 }

@@ -10,10 +10,12 @@
 .work__item {
   position: relative;
   margin-right: 30px;
-}
-.work__item:last-child {
+
+  &:last-child {
   margin-right: 0;
 }
+}
+
 .work__text {
   position: absolute;
   width: 100%;

@@ -3,10 +3,10 @@
   justify-content: center;
   align-items: center;
 }
-.team__social-item{
-    &:not(:last-child) {
-        margin-right: 10px;
-      }
+.team__social-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .team__social-link {
   display: flex;
@@ -21,12 +21,15 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
-&:focus {
-  background-color: var(--logo-cl);
-}
+  &:focus {
+    background-color: var(--logo-cl);
+  }
 }
 
-.team__social-link:hover .team__svg-icon,
-.team__social-link:focus .team__svg-icon {
+
+.team__svg-icon{
+.team__social-link:hover &,
+.team__social-link:focus & {
   fill: var(--white-cl);
+}
 }
