@@ -27,7 +27,6 @@
 }
 
 .project__card-thumb {
- 
   position: relative;
   overflow: hidden;
 }
@@ -42,6 +41,11 @@
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .project__item:hover &,
+  .project__item:focus & {
+    transform: translateY(0);
+  }
 }
 .project__text-overlay {
   padding-top: 63px;
@@ -54,9 +58,4 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--whiteF-cl);
-}
-
-.project__item:hover .project__text-overlay,
-.project__item:focus .project__text-overlay {
-  transform: translateY(0);
 }

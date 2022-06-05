@@ -1175,6 +1175,12 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.project__item:hover .project__overlay,
+.project__item:focus .project__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .project__text-overlay {
   padding-top: 63px;
   padding-left: 24px;
@@ -1186,11 +1192,5 @@ img {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--whiteF-cl);
-}
-
-.project__item:hover .project__text-overlay,
-.project__item:focus .project__text-overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 /*# sourceMappingURL=main.css.map */
