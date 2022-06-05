@@ -24,16 +24,16 @@
   transition-property: box-shadow;
   transition-property: box-shadow, -webkit-box-shadow;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project__item:hover,
 .project__item:focus {
   cursor: pointer;
   -webkit-box-shadow: 0 4px 4px var(--border-team);
-          box-shadow: 0 4px 4px var(--border-team);
+  box-shadow: 0 4px 4px var(--border-team);
 }
 
 .project__card-thumb {
@@ -49,15 +49,15 @@
   height: 100%;
   background-color: var(--bc-prtf);
   -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  transform: translateY(100%);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project__text-overlay {
@@ -76,6 +76,6 @@
 .project__item:hover .project__overlay,
 .project__item:focus .project__overlay {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 /*# sourceMappingURL=projects.css.map */

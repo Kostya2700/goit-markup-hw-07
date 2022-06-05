@@ -27,6 +27,7 @@
 }
 
 .project__card-thumb {
+ 
   position: relative;
   overflow: hidden;
 }
@@ -53,9 +54,9 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--whiteF-cl);
+}
 
-  .project__item:hover &,
-  .project__item:focus & {
-    transform: translateY(0);
-  }
+.project__item:hover .project__text-overlay,
+.project__item:focus .project__text-overlay {
+  transform: translateY(0);
 }
